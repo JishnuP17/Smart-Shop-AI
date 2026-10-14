@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pymongo
+python-dotenv
+numpy
+sentence-transformers
+pyarrow
+faiss-cpu
+filelock

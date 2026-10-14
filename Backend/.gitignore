@@ -1,0 +1,25 @@
+# Secrets and local configuration
+.env
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# Tool caches and editor files
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.cache/
+model_cache/
+dataset_cache/
+data/faiss/

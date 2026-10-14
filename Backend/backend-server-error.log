@@ -1,0 +1,108 @@
+INFO:     Started server process [39720]
+INFO:     Waiting for application startup.
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 2s [Retry 2/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 4s [Retry 3/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 8s [Retry 4/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 8s [Retry 5/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Could not reach the Hub ([WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Could not reach the Hub ([WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 2861.45it/s]
+Could not reach the Hub ([WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/2_Normalize/config.json
+Retrying in 1s [Retry 1/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/2_Normalize/config.json
+Retrying in 2s [Retry 2/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/2_Normalize/config.json
+Retrying in 4s [Retry 3/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/2_Normalize/config.json
+Retrying in 8s [Retry 4/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/2_Normalize/config.json
+Retrying in 8s [Retry 5/5].
+'[WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/2_Normalize/config.json
+C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\app\services\embeddings.py:26: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  actual_dimensions = model.get_sentence_embedding_dimension()
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 111, in _resolve_uri
+    results = _resolve(
+              ^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 46, in _resolve
+    return resolver.resolve(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\dns\resolver.py", line 1559, in resolve
+    return get_default_resolver().resolve(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\dns\resolver.py", line 1320, in resolve
+    timeout = self._compute_timeout(start, lifetime, resolution.errors)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\dns\resolver.py", line 1089, in _compute_timeout
+    raise LifetimeTimeout(timeout=duration, errors=errors)
+dns.resolver.LifetimeTimeout: The resolution lifetime expired after 3.013 seconds: Server Do53:192.168.23.21@53 answered The DNS operation timed out.; Server Do53:192.168.23.22@53 answered The DNS operation timed out.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\starlette\routing.py", line 654, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 247, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 247, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\app\main.py", line 42, in lifespan
+    current = await asyncio.to_thread(validate_catalog_against_index)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\app\services\vector_search.py", line 235, in validate_catalog_against_index
+    signature = catalog_signature()
+                ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\app\services\vector_search.py", line 104, in catalog_signature
+    for product in iter_catalog_products(batch_size=512, include_vectors=False):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\app\services\database.py", line 138, in iter_catalog_products
+    collection = get_client()[get_database_name()]["products"]
+                 ^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\app\services\database.py", line 25, in get_client
+    _client = MongoClient(
+              ^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 930, in __init__
+    self._get_topology()  # type: ignore[unused-coroutine]
+    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1816, in _get_topology
+    self._resolve_srv()
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 950, in _resolve_srv
+    res = uri_parser._parse_srv(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\pymongo\synchronous\uri_parser.py", line 173, in _parse_srv
+    nodes = dns_resolver.get_hosts()
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 155, in get_hosts
+    _, nodes = self._get_srv_response_and_hosts(True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 125, in _get_srv_response_and_hosts
+    results = self._resolve_uri(encapsulate_errors)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jishnu\OneDrive\Documents\AI project\Backend\.venv\Lib\site-packages\pymongo\synchronous\srv_resolver.py", line 119, in _resolve_uri
+    raise ConfigurationError(str(exc)) from exc
+pymongo.errors.ConfigurationError: The resolution lifetime expired after 3.013 seconds: Server Do53:192.168.23.21@53 answered The DNS operation timed out.; Server Do53:192.168.23.22@53 answered The DNS operation timed out.
+
+ERROR:    Application startup failed. Exiting.
